@@ -1,14 +1,10 @@
 let fs = require('fs');
-fs.writeFileSync('welcome.txt', 'Hello Node');
-let data = fs.readFileSync('./welcome.txt');
-console.log(data.toString());
 
-// let datas = fs.readFile('./hey.txt', (err, data) => {
-//     if (err) {
-//         console.error(err);
-//         return;
-//     }
-//     console.log(data.toString());
+fs.writeFileSync('welcome.txt', 'Hello Node', (err) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log("File created successfully");
+});
 
-// });
-// console.log("All Dones !");

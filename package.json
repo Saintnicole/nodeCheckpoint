@@ -10,5 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-   "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "generate-password": "^1.7.1",
+    "nodemailer": "^7.0.11"
+  }
 }
