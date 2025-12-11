@@ -1,7 +1,7 @@
 // this code is to create a server that listens on port 3000 and responds with "Hello Node!!!!"
 import * as fs from 'fs';
 import http from 'http';
-http.createServer( (req, res) => {
+http.createServer( (res) => {
     res.end(
         '<h1>Hello Node!!!!</h1>\n'
     )
